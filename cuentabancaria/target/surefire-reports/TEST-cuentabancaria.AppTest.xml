@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cuentabancaria.AppTest" time="0.048" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cuentabancaria.AppTest" time="0.054" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire2243719633129259943\surefirebooter9730339861520187126.jar C:\Users\User\AppData\Local\Temp\surefire2243719633129259943 2025-03-30T23-33-59_235-jvmRun1 surefire17205589595241316900tmp surefire_0833321369182157558tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire8870785915514210766\surefirebooter3895805763515404861.jar C:\Users\User\AppData\Local\Temp\surefire8870785915514210766 2025-03-30T23-38-50_058-jvmRun1 surefire9095695128234726890tmp surefire_014170605724789089679tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\User\Desktop\Factoria F5\CuentaBancaria\cuentabancaria\target\test-classes;C:\Users\User\Desktop\Factoria F5\CuentaBancaria\cuentabancaria\target\classes;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire2243719633129259943\surefirebooter9730339861520187126.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire8870785915514210766\surefirebooter3895805763515404861.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testApp" classname="cuentabancaria.AppTest" time="0.033">
+  <testcase name="testApp" classname="cuentabancaria.AppTest" time="0.042">
     <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting cuentabancaria/AppTest.
 	at org.jacoco.agent.rt.internal_035b120.CoverageTransformer.transform(CoverageTransformer.java:93)
 	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
@@ -82,6 +82,76 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 Caused by: java.io.IOException: Error while instrumenting cuentabancaria/AppTest.
+	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrumentError(Instrumenter.java:158)
+	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrument(Instrumenter.java:108)
+	at org.jacoco.agent.rt.internal_035b120.CoverageTransformer.transform(CoverageTransformer.java:91)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 65
+	at org.jacoco.agent.rt.internal_035b120.asm.ClassReader.<init>(ClassReader.java:195)
+	at org.jacoco.agent.rt.internal_035b120.asm.ClassReader.<init>(ClassReader.java:176)
+	at org.jacoco.agent.rt.internal_035b120.asm.ClassReader.<init>(ClassReader.java:162)
+	at org.jacoco.agent.rt.internal_035b120.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:279)
+	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrument(Instrumenter.java:74)
+	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrument(Instrumenter.java:106)
+	... 21 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting cuentabancaria/CuentaAhorrosTest.
+	at org.jacoco.agent.rt.internal_035b120.CoverageTransformer.transform(CoverageTransformer.java:93)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.apache.maven.surefire.api.util.DefaultScanResult.loadClass(DefaultScanResult.java:136)
+	at org.apache.maven.surefire.api.util.DefaultScanResult.applyFilter(DefaultScanResult.java:100)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.scanClasspath(JUnitPlatformProvider.java:147)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.io.IOException: Error while instrumenting cuentabancaria/CuentaAhorrosTest.
+	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrumentError(Instrumenter.java:158)
+	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrument(Instrumenter.java:108)
+	at org.jacoco.agent.rt.internal_035b120.CoverageTransformer.transform(CoverageTransformer.java:91)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 65
+	at org.jacoco.agent.rt.internal_035b120.asm.ClassReader.<init>(ClassReader.java:195)
+	at org.jacoco.agent.rt.internal_035b120.asm.ClassReader.<init>(ClassReader.java:176)
+	at org.jacoco.agent.rt.internal_035b120.asm.ClassReader.<init>(ClassReader.java:162)
+	at org.jacoco.agent.rt.internal_035b120.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:279)
+	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrument(Instrumenter.java:74)
+	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrument(Instrumenter.java:106)
+	... 21 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting cuentabancaria/CuentaCorrienteTest.
+	at org.jacoco.agent.rt.internal_035b120.CoverageTransformer.transform(CoverageTransformer.java:93)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:610)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.apache.maven.surefire.api.util.DefaultScanResult.loadClass(DefaultScanResult.java:136)
+	at org.apache.maven.surefire.api.util.DefaultScanResult.applyFilter(DefaultScanResult.java:100)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.scanClasspath(JUnitPlatformProvider.java:147)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.io.IOException: Error while instrumenting cuentabancaria/CuentaCorrienteTest.
 	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrumentError(Instrumenter.java:158)
 	at org.jacoco.agent.rt.internal_035b120.core.instr.Instrumenter.instrument(Instrumenter.java:108)
 	at org.jacoco.agent.rt.internal_035b120.CoverageTransformer.transform(CoverageTransformer.java:91)
