@@ -1,6 +1,6 @@
 package  cuentabancaria;
 class CuentaAhorros extends Cuenta {
-    private boolean activa;
+    protected boolean activa;
 
     public CuentaAhorros(float saldo, float tasaAnual) {
         super(saldo, tasaAnual);
@@ -34,4 +34,8 @@ class CuentaAhorros extends Cuenta {
     public String imprimir() {
         return super.imprimir() + ", Activa: " + activa;
     }
+    public boolean isActiva() {
+        return activa;
+    }
+    
 }
