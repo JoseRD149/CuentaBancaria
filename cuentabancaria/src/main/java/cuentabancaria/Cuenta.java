@@ -1,6 +1,6 @@
 package cuentabancaria;
 
-public class cuenta {
+public class Cuenta {
     protected float saldo;
     protected int numeroConsignaciones = 0;
     protected int numeroRetiros = 0;
